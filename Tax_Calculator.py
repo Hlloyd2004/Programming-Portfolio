@@ -8,13 +8,12 @@ while option == "yes":
     tax = 0.00
 
 # 20% is taken off income
-  if income > 12570.00:
-    if income < 50270:
-    	  tax = income * 0.20
+  if income > 12570.00 and income < 50270:
+    tax = income * 0.20
 
 # 40% is taken off income
   if income >= 50270.00 and income < 125140.00:
-      tax = income * 0.40
+    tax = income * 0.40
 
 # 45% is taken off income
   if income > 125140.00:
